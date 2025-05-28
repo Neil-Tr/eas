@@ -7,10 +7,35 @@
     <link rel ="stylesheet" href = "style.css"></link>
 </head>
 <body>
-<h1> Let's play Etch-a-Sketch</h1>    
+    <h1> Let's play Etch-a-Sketch</h1>
 
+    <div class ="playarea">
+
+        <div class="leftpad"></div>
+
+        <div class = "canva"></div>
+
+        <div class="setting">
+            <p>Let's select the grid size</p>  
+            <select id="gridSize">
+                <option value = "10"> 10 x 10 </option>
+                <option value = "20" selected = "selected"> 20 x 20 </option>
+                <option value = "30"> 30 x 30 </option>
+            </select>
+            <p>and choose the filled color</p> 
+            <select id="color">
+                <option value = "blue"> Blue </option>
+                <option value = "rainbow"> Rainbow </option>
+            </select>
+            <p class = "note"> * you can right click on a square to reset it to White</p>
+            <button class="generate">Generate / Clear Grid</button>
+
+        </div>
+
+    </div>
 
 
 <script src="eas.js"></script>
+
 </body>
 </html>
